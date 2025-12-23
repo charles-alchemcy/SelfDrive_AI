@@ -9,15 +9,13 @@ from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.policies import ActorCriticPolicy
 import math
 
-
-env_name = "./UnityEnv"
+env_name = "./UnityEnv1"
 speed = 15
 
 
 env = UnityEnvironment(env_name,seed=1, side_channels=[channel])
 channel.set_configuration_parameters(time_scale =speed)
 env= UnityToGymWrapper(env, uint8_visual=False) # OpenAI gym interface created using UNITY
-
 time_int = int(time.time())
 
 # Diretories for storing results 

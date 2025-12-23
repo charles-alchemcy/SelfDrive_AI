@@ -16,7 +16,6 @@ speed = 15
 env = UnityEnvironment(env_name,seed=1, side_channels=[channel])
 channel.set_configuration_parameters(time_scale =speed)
 env= UnityToGymWrapper(env, uint8_visual=False) # OpenAI gym interface created using UNITY
-
 time_int = int(time.time())
 
 # Diretories for storing results 

@@ -9,7 +9,7 @@ from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.policies import ActorCriticPolicy
 import math
 
-env_name = "./UnityEnv"
+env_name = "./UnityEnv1"
 speed = 15
 
 

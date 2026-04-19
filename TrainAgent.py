@@ -48,4 +48,3 @@ for i in range(400):
     obs, rewards, done, info = env.step(action)
     env.render()
 
-

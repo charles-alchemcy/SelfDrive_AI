@@ -38,4 +38,3 @@ for i in range(1000):
     action, states = model.predict(obs)
     obs, rewards, done, info = env.step(action)
     env.render()
-
